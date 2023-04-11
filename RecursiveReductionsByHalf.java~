@@ -1,0 +1,17 @@
+
+public class RecursiveReductionsByHalf {
+
+    public static void main (String[] argv) 
+    {
+	int N = 31;
+	int k = reductions (N);
+	System.out.println ("k=" + k);
+    }
+
+    static int reductions (int n)
+    {
+	// INSERT YOUR CODE HERE:
+
+    }
+
+}

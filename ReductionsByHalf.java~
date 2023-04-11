@@ -1,0 +1,20 @@
+
+public class ReductionsByHalf {
+
+    public static void main (String[] argv) 
+    {
+	int N = 15;
+	int k = reductions (N);
+	System.out.println ("k=" + k);
+    }
+
+    static int reductions (int n)
+    {
+	int count = 0;
+
+	// INSERT YOUR CODE HERE:
+
+	return count;
+    }
+
+}

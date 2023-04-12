@@ -1,0 +1,66 @@
+
+import java.util.*;
+
+class TreeNode {
+    int data;        
+    TreeNode left;    // Pointer to the left child.
+    TreeNode right;   // Pointer to the right child.
+
+    // This could be useful in debugging:
+
+    public String toString ()
+    {
+        String str = "[data=" + data;
+        String leftData = "null";
+        if (left != null) {
+            leftData = "" + left.data;
+        }
+        String rightData = null;
+        if (right != null) {
+            rightData = "" + right.data;
+        }
+        str += " left=" + leftData + " right=" + rightData + "]";
+        return str;
+    }
+
+} //end-TreeNode
+
+
+
+public class BinaryTreeInt {
+
+    TreeNode root = null;    // Root of the tree.
+    int numItems = 0;
+
+    public void add (int k)
+    {
+        // If empty, create new root.
+        if (root == null) {
+            root = new TreeNode ();
+            root.data = k;
+            return;
+        }
+        
+        // If this is a new piece of data, insert into tree.
+        recursiveInsert (root, k);
+    }
+
+    
+    void recursiveInsert (TreeNode node, int k)
+    {
+	// INSERT YOUR CODE HERE.
+    }
+    
+
+    public int size ()
+    {
+        return numItems;
+    }
+
+
+    public TreeNode getRoot ()
+    {
+	return root;
+    }
+
+}

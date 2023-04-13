@@ -34,11 +34,7 @@ public class BinaryTreeInt {
 
 
     public boolean contains (int k)
-    {
-	if (root == null) {
-	    return false;
-	}
-
+    {	
 	return recursiveSearch (root, k);
     }
 
@@ -59,6 +55,7 @@ public class BinaryTreeInt {
 	    return recursiveSearch (node.right, k);
 	}
     }
+
     
     public void add (int k)
     {

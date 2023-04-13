@@ -6,7 +6,7 @@ public class RemainderGrouping {
     {
 	int[] A = {2,3,5,7,11,13,17,19,23,29,31,37,41,43,47};
 	int K = 11;
-
+	
 	LinkedList<Integer> elementsByRem;
 	ArrayList<LinkedList<Integer>> remArray = new ArrayList<> ();
 	
@@ -25,6 +25,7 @@ public class RemainderGrouping {
 	    }
 
 	}
+	
 
 	int remainder = 0;
 	for (LinkedList<Integer> list: remArray) {

@@ -51,11 +51,24 @@ public class HashtableInt {
 
     public void print ()
     {
+       for (int i=0; i<table.length; i++) {
+	    System.out.print ("Bucket # " + i + ": ");
+	    if (table[i] == null) {
+		System.out.println ();
+		continue;
+	    }
+	    for (int num: table[i]) {
+		System.out.print (" " + num);
+	    }
+	    System.out.println ();
+	}
+	/*
 	for (int i=0; i<table.length; i++) {
 	    if (table[i] != null) {
 		System.out.println (table[i]);
 	    }
 	}
+	*/
     }
 
 }

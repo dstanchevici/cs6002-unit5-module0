@@ -1,0 +1,20 @@
+// Unit 5, Module 0, Ex. 40
+
+public class MyTreeSetExample {
+
+    public static void main (String[] argv)
+    {
+	TreeSet<String> tree = new TreeSet<> ();
+	tree.add ("Ewok");
+	tree.add ("Gungan");
+	tree.add ("Aqualish");
+	tree.add ("Amanin");
+	tree.add ("Cerean");
+	tree.add ("Jawa");
+	tree.add ("Hutt");
+
+	
+       
+    }
+
+}

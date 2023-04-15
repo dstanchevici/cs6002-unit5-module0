@@ -1,0 +1,53 @@
+
+class TribeInfo {
+
+    String name;
+    int fierceness;
+    String planet;
+
+    public TribeInfo (String name, int fierceness, String planet)
+    {
+        this.name = name;
+        this.fierceness = fierceness;
+        this.planet = planet;
+    }
+
+    public String toString ()
+    {
+        return "Tribe: " + name + " from planet " + planet + " rating=" + fierceness;
+    }
+    
+}
+
+public class OurLinkedListMapExample2 {
+
+    public static void main (String[] argv)
+    {
+	OurLinkedListMap2 map = new OurLinkedListMap2 ();
+
+        TribeInfo info = new TribeInfo ("Ewok", 3, "Endor");
+        map.add ("Ewok", info);
+
+        info = new TribeInfo ("Aqualish", 6, "Ando");
+        map.add ("Aqualish", info);
+
+        info = new TribeInfo ("Gungan", 2, "Naboo");
+        map.add ("Gungan", info);
+
+        info = new TribeInfo ("Amanin", 8, "Maridun");
+        map.add ("Amanin", info);
+
+        info = new TribeInfo ("Jawa", 6, "Tatooine");
+        map.add ("Jawa", info);
+
+        info = new TribeInfo ("Hutt", 7, "Varl");
+        map.add ("Hutt", info);
+
+        info = new TribeInfo ("Cerean", 4, "Cerea");
+        map.add ("Cerean", info);
+
+        TribeInfo result = map.get ("Hutt");
+        System.out.println (result);
+    }
+
+}

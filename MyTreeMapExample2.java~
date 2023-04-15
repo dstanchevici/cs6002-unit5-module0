@@ -1,0 +1,12 @@
+// Unit 5, Module 0, ex. 42
+
+import java.util.*;
+
+public class MyTreeMapExample2 {
+
+    public static void main (String[] argv)
+    {
+
+    }
+
+}
